@@ -5,9 +5,9 @@ class Faculty(models.Model):
     Name=models.CharField(max_length=30)
     Department=models.CharField( max_length=50)
     Designation=models.CharField(max_length=50)
-
     def __str__(self):
         return self.Name
+        
 class JournalPublication(models.Model):
     faculty=models.ForeignKey(Faculty,on_delete=models.CASCADE ,related_name="JournalPublication")
     Paper_title=models.CharField(max_length=70)
