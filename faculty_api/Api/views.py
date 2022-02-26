@@ -4,9 +4,10 @@ from rest_framework.views import APIView
 from faculty_api.Api.Serialiser import Bookserializer, FacultySerializer, journalserializer,confrenceserializer
 from faculty_api.models import Faculty,BookPublication, JournalPublication,ConfrencePublication
 from rest_framework import status
-
+from rest_framework.permissions import IsAuthenticated
 
 class faculty(APIView):
+    permission_classes=[IsAuthenticated]
     def get(self,request):
         faculty = Faculty.objects.all()
         serializer = FacultySerializer(faculty,many=True)
