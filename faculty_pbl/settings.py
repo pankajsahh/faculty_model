@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'faculty_api',
-    'rest_framework.authtoken',
     'usersHandler',
+    'rest_framework.authtoken',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -127,19 +129,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# restframework ke default api ui ko hide kr ra hu yaha
-'''
 REST_FRAMEWORK = {
-    'DEFAULT_RENDERER_CLASSES': [
-        'rest_framework.renderers.JSONRenderer',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
     ]
 }
-
-token authentication ke bina api ko access nhi kar paega koi agar ye setting on hai to
-
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.TokenAuthentication',
-    ]
-}
-'''
