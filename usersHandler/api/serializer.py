@@ -1,4 +1,3 @@
-
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
@@ -19,7 +18,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({'Error':"password 1 and 2 do not match"})
         if User.objects.filter(email=self.validated_data['email']).exists():
             raise serializers.ValidationError({'error':'email already exist in database'})
-        account = User(email=self.validated_data['email'],username=self.validated_data['username'])
+        account = User(email=email,username=self.validated_data['username'])
         account.set_password(password)
         account.save()
         return account
