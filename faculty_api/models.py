@@ -5,6 +5,7 @@ class Faculty(models.Model):
     Name=models.CharField(max_length=30)
     Department=models.CharField( max_length=50)
     Designation=models.CharField(max_length=50)
+    
     def __str__(self):
         return self.Name
         
@@ -22,6 +23,7 @@ class JournalPublication(models.Model):
 class BookPublication(models.Model):
     faculty=models.ForeignKey(Faculty,on_delete=models.CASCADE ,related_name="BookPublication")
     Book_title=models.CharField(max_length=70)
+    # chapters or book + chapter namess to be added
     Year = models.DateField()
     Co_Author = models.CharField(max_length=30 ,blank=True, null=True)
     Edition = models.IntegerField()
@@ -35,5 +37,6 @@ class ConfrencePublication(models.Model):
     Year = models.DateField()
     Co_Author = models.CharField(max_length=30 ,blank=True, null=True)
     Proceeding=models.IntegerField()
+    # national international
     def __str__(self):
         return self.Organizer
