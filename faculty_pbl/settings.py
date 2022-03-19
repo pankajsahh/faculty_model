@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework',
+    'django_rest_passwordreset',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'faculty_api',
     'usersHandler',
     'rest_framework.authtoken',
+
     
     
 ]
@@ -134,3 +136,14 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
+
+#smtp email settings
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'pankajsahu98990@gmail.com'
+EMAIL_HOST_PASSWORD = 'Pankaj@9728'
+
+#admin details {{ password Sahu@123}{ pankajsahu19056@gamil.com }{ superuser } { username pankajsahu }}
