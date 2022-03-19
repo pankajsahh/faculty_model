@@ -144,6 +144,6 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pankajsahu98990@gmail.com'
-EMAIL_HOST_PASSWORD = 'Pankaj@9728'
+EMAIL_HOST_PASSWORD = '...enter the password for this email...'
 
 #admin details {{ password Sahu@123}{ pankajsahu19056@gamil.com }{ superuser } { username pankajsahu }}
