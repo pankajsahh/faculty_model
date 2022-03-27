@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'faculty_api',
     'usersHandler',
     'rest_framework.authtoken',
-
+    'corsheaders',
     
     
 ]
@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'faculty_pbl.urls'
@@ -144,6 +145,11 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pankajsahu98990@gmail.com'
-EMAIL_HOST_PASSWORD = '...enter the password for this email...'
+EMAIL_HOST_PASSWORD = 'Sahu@9899'
 
 #admin details {{ password Sahu@123}{ pankajsahu19056@gamil.com }{ superuser } { username pankajsahu }}
+
+
+ALLOWED_HOSTS=['*']
+
+CORS_ORIGIN_ALLOW_ALL = True

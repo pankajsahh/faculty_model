@@ -1,0 +1,7 @@
+.left_nav{
+    height: 100vh;
+}
+.UpdatePage{
+    display: flex;
+    flex-direction: row;
+}

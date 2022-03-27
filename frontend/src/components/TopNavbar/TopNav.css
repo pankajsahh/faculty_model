@@ -1,0 +1,20 @@
+
+.nav_detail{
+    margin: 20px 26px;
+}
+.signinLogo{
+    padding: 20px;
+    margin: 20px 50px;
+    margin-right: 70px;
+    
+}
+.signinLogo span{
+    margin: 0 4px;
+}
+.fa-circle{
+    color: rgba(118, 192, 8, 0.856);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 6px;
+
+}

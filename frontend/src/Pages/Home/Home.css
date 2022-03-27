@@ -1,0 +1,31 @@
+.body_view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+
+.flex_col{
+   display: flex;
+   flex-direction: column;
+  
+}
+.content_Box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-top-left-radius: 15px;
+    background: #dbdbdb2a ;
+}
+.top_nav{ /* width need media query */
+    width: 80vw;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left_nav{
+    height: 100vh;
+}
+/* color decided #F2F2F2 60 #DBDBDB 30 #20BDFF 10 */

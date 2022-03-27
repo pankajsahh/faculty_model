@@ -1,0 +1,13 @@
+
+
+.Logout li{
+    width: fit-content!important;
+    text-align: center;
+    
+}
+.LogoutButton{
+    border: none;
+    background-color: #dbdbdb41;
+    width: 40%;
+   margin: 2px;
+}
