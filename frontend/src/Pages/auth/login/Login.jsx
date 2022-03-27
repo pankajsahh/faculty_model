@@ -2,6 +2,14 @@ import axios from 'axios';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
+
+////////
+/////sh
+
+
+
+///////
+
 const SignIn = () => {
     const [username, setusername] = useState("");
     const [password, setpassword] = useState("");
@@ -55,6 +63,7 @@ const SignIn = () => {
             })
             .catch(function (error) {
                 if (!error?.response) {
+                    console.log(error)
                     seterr("NO response from server 404 maybe bad enter")
                 } else if (error.response?.status === 400) {
                     seterr("missing username or password please enter valid username and password")

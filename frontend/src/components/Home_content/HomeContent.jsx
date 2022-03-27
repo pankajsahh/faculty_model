@@ -16,6 +16,7 @@ import {
     MDBModalFooter,
     MDBInput,
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 ///////////////////////////////////////
 
 
@@ -75,28 +76,10 @@ const Home_content = () => {
 
     ////////////basic view of home content ////////////////////////////////////////////////
 
-    const { Faculty, setFaculty } = useContext(Context);
+    const { Faculty, setFaculty , dataftch } = useContext(Context);
     const data_fetch_Reference = useRef();
     data_fetch_Reference.current = dataftch;//will create reference for our use effect
-    function dataftch() {
-        const MyProfileTokenID = JSON.parse(localStorage.getItem("myid"));
-        if (MyProfileTokenID !== null) {
-            if (MyProfileTokenID.key !== "") {
-                axios.get(`http://127.0.0.1:8000/faculty/${MyProfileTokenID.key}`, {
-                    headers: {
-                        'Authorization': `token ${MyProfileTokenID.token}`
-                    }
-                })
-                    .then((res) => {
-                        console.log(res.data)
-                        setFaculty(res.data);
-                    })
-                    .catch((error) => {
-                        console.error(error)
-                    })
-            }
-        }
-    }
+    
     useEffect(() => { //everytime component render it get called
         data_fetch_Reference.current()
     }, [])
@@ -239,7 +222,7 @@ const Home_content = () => {
                         <h2>Books Published</h2>
                         <p>please add new books to your profile !!!</p>
                         <button onClick={toggleShowBookAdder}>add</button>
-                        <button >update</button>
+                       <Link to='/update/Booklist'> <button >update / delete</button> </Link>
                     </div>
                 </div>
                 <div className="publication">
@@ -250,7 +233,7 @@ const Home_content = () => {
                         <h2>journals Published</h2>
                         <p>please add new journals to your profile !!!</p>
                         <button onClick={toggleShowjournalAdder}>add</button>
-                        <button >update</button>
+                        <Link to='/update/journallist'> <button >update / delete</button></Link>
                     </div>
                 </div>
                 <div className="publication">
@@ -261,7 +244,7 @@ const Home_content = () => {
                         <h2>confrences Published</h2>
                         <p>please add new confrences to your profile !!!</p>
                         <button onClick={toggleShowconfrenceAdder}>add</button>
-                        <button >update</button>
+                        <Link to='/update/confrencelist'> <button >update / delete</button></Link>   
                     </div>
                 </div>
             </div>

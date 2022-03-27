@@ -4,7 +4,9 @@ import SignIn from './Pages/auth/login/Login.jsx';
 import Home from './Pages/Home/Home.jsx';
 import Register from './Pages/auth/register/Register.jsx'
 import UpdatePage from './Pages/update/UpdatePage';
-
+import JournalItemList from './components/ItemList/JournalItemList'
+import ConfrenceItemList from './components/ItemList/ConfrenceItemList'
+import BookList from './components/ItemList/BookItemList.jsx'
 function App() {
   return (
     <BrowserRouter>
@@ -12,7 +14,11 @@ function App() {
       <Route exact path='/' element={<Home/>}/>
       <Route path='/login' element={<SignIn/>}/>
       <Route path='/register' element={<Register/>}/>
-      <Route path='/update' element={<UpdatePage/>} />
+      <Route path='/update' element={<UpdatePage/>} >
+        <Route path='/update/Booklist' element={<BookList/>}/>
+        <Route path='/update/confrencelist' element={<ConfrenceItemList/>}/>
+        <Route path='/update/journallist' element={<JournalItemList/>}/>
+      </Route>
     </Routes>
     </BrowserRouter>
   );

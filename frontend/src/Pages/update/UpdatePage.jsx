@@ -1,28 +1,30 @@
-import React from "react"
+import React, { useContext, useEffect, useRef } from "react";
 import LeftNav from "../../components/LeftNav/LeftNav";
-import './UpdatePage.css'
-import { MDBCard, MDBCardHeader, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from 'mdb-react-ui-kit';
+import "./UpdatePage.css";
+import { Outlet } from "react-router-dom";
+import Context from "../../components/context/Context";
 
+const UpdatePage = () => {
 
+  const {dataftch} = useContext(Context)
 
-const UpdatePage =()=>{
-    return(
+    const Book_Featch_reference = useRef();
+    Book_Featch_reference.current = dataftch;
+
+    
+    useEffect(()=>{
+      console.log("called update")
+        Book_Featch_reference.current();
+        // dataftch();
+    },[])
+  return (
     <div className="UpdatePage">
-        <div>
-            <LeftNav/>
-        </div>
-        <div>
-        <MDBCard >
-      <MDBCardHeader>Featured</MDBCardHeader>
-      <MDBCardBody>
-        <MDBCardTitle>Special title treatment</MDBCardTitle>
-        <MDBCardText>With supporting text below as a natural lead-in to additional content.</MDBCardText>
-        <MDBBtn href='#'>Go somewhere</MDBBtn>
-      </MDBCardBody>
-    </MDBCard>
-        </div>
-        </div>
-    )
-}
+      <div>
+        <LeftNav />
+      </div>
+      <Outlet />
+    </div>
+  );
+};
 
 export default UpdatePage;

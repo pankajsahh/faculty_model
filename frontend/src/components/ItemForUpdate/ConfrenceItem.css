@@ -1,0 +1,41 @@
+/* color decided #F2F2F2 60 #dbdbdb41 30 #20BDFF 10 */
+
+.ConfrenceItemView{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #20BDFF;
+    margin-left: 50px;
+    border-radius: 8px;
+    background: #dbdbdb25;
+}
+.ConfrenceItemView:hover{
+    transition: 0.6s;
+    box-shadow: 0 0  2px 1px  #20BDFF;
+}
+.Confrenceimage img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px;
+}
+.CurdButtonConfrencePublication{
+ display: flex;
+ flex-direction: column;
+}
+.CurdButtonConfrencePublication button{
+    margin: 10px ;
+    border: none;
+    padding: 8px 12px;
+    background-color: #dbdbdb41;
+    border-radius: 8px;
+    
+}
+.CurdButtonConfrencePublication button:hover{
+    transition: 0.6s;
+    color: white;
+    background-color: #20BDFF;
+}
