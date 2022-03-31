@@ -7,7 +7,7 @@ const Store = (prop) => {
     const Myprofile = {
         id:"",BookPublication:[{id:"",Book_title:"no book found",Year:"",Co_Author:"login please",Edition:"",Publisher:"",faculty:""}],JournalPublication:[{id:"",Paper_title:"no paper found",Year:"",Co_Author:"login please",Volume:"",Publisher:"",Indexing:"",faculty:""}],ConfrencePublication:[{id:"",Organizer:"no event found",Year:"",Co_Author:"please login again ",Proceeding:"",faculty:""}],Name:"NotFound",Department:"Please Login",Designation:"",Email:""
     }
-
+    const [searchterm,setsearchterm]=useState("")
     const [Faculty, setFaculty] = useState(Myprofile);
     console.log(Faculty,"i am having some data for you ");
     // get id and access_token from localStorage
@@ -35,7 +35,7 @@ const Store = (prop) => {
 
 
     return (
-        <Context.Provider value={{ Faculty ,setFaculty,dataftch}}>
+        <Context.Provider value={{ Faculty ,setFaculty,dataftch,searchterm,setsearchterm}}>
             {prop.children}
         </Context.Provider>
     )

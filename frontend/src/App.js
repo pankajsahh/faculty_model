@@ -7,6 +7,7 @@ import UpdatePage from './Pages/update/UpdatePage';
 import JournalItemList from './components/ItemList/JournalItemList'
 import ConfrenceItemList from './components/ItemList/ConfrenceItemList'
 import BookList from './components/ItemList/BookItemList.jsx'
+import SearchPage from './Pages/Search/SearchPage.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path='/update/confrencelist' element={<ConfrenceItemList/>}/>
         <Route path='/update/journallist' element={<JournalItemList/>}/>
       </Route>
+      <Route path='/search' element={<SearchPage/>}/>
     </Routes>
     </BrowserRouter>
   );

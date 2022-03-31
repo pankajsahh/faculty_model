@@ -1,0 +1,314 @@
+[
+    {
+        "id": 6,
+        "BookPublication": [
+            {
+                "id": 8,
+                "Book_title": "wonder in life of lone wolf",
+                "Year": "2022-02-16",
+                "Co_Author": null,
+                "Edition": -3,
+                "Publisher": "pankaj_publication house",
+                "faculty": 6
+            },
+            {
+                "id": 9,
+                "Book_title": "Post jhgkjj request checking",
+                "Year": "2022-02-16",
+                "Co_Author": null,
+                "Edition": 5,
+                "Publisher": "check- house",
+                "faculty": 6
+            }
+        ],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "pankaj",
+        "Department": "sahusdsa",
+        "Designation": "pankajdfn",
+        "Email": "pankajashu@gmail.com"
+    },
+    {
+        "id": 7,
+        "BookPublication": [
+            {
+                "id": 4,
+                "Book_title": "wonder in life of lone wolf",
+                "Year": "2022-02-14",
+                "Co_Author": null,
+                "Edition": 1,
+                "Publisher": "pankaj_publication house",
+                "faculty": 7
+            },
+            {
+                "id": 7,
+                "Book_title": "7 in life of lone wolf",
+                "Year": "2022-02-13",
+                "Co_Author": null,
+                "Edition": 1,
+                "Publisher": "pankaj_publication house",
+                "faculty": 7
+            },
+            {
+                "id": 10,
+                "Book_title": "test tasty tasty test",
+                "Year": "2022-02-13",
+                "Co_Author": "pankajdfn",
+                "Edition": 3,
+                "Publisher": "sahusdsa",
+                "faculty": 7
+            }
+        ],
+        "JournalPublication": [],
+        "ConfrencePublication": [
+            {
+                "id": 5,
+                "Organizer": "safdfd",
+                "Year": "2022-03-26",
+                "Co_Author": "fh",
+                "Proceeding": 43,
+                "faculty": 7
+            }
+        ],
+        "Name": "pankaj sahu",
+        "Department": "computer science",
+        "Designation": "senior manager",
+        "Email": "pankajsahu19056@gmail.com"
+    },
+    {
+        "id": 8,
+        "BookPublication": [
+            {
+                "id": 12,
+                "Book_title": "vb",
+                "Year": "2022-03-11",
+                "Co_Author": "fh",
+                "Edition": 12,
+                "Publisher": "dfg",
+                "faculty": 8
+            },
+            {
+                "id": 13,
+                "Book_title": "vb",
+                "Year": "2022-03-11",
+                "Co_Author": "fh",
+                "Edition": 12,
+                "Publisher": "dfg",
+                "faculty": 8
+            },
+            {
+                "id": 14,
+                "Book_title": "test tasty tasty test",
+                "Year": "2022-02-13",
+                "Co_Author": "pankajdfnf",
+                "Edition": 3,
+                "Publisher": "sahusdsa",
+                "faculty": 8
+            },
+            {
+                "id": 15,
+                "Book_title": "test tasty tasty test",
+                "Year": "2022-02-13",
+                "Co_Author": "pankajdfnf",
+                "Edition": 3,
+                "Publisher": "sahusdsa",
+                "faculty": 8
+            },
+            {
+                "id": 16,
+                "Book_title": "test tasty tasty test",
+                "Year": "2022-02-13",
+                "Co_Author": "pankajdfnf",
+                "Edition": 3,
+                "Publisher": "sahusdsa",
+                "faculty": 8
+            },
+            {
+                "id": 17,
+                "Book_title": "test tasty tasty test",
+                "Year": "2022-02-13",
+                "Co_Author": "pankajdfnf",
+                "Edition": 3,
+                "Publisher": "sahusdsa",
+                "faculty": 8
+            },
+            {
+                "id": 19,
+                "Book_title": "vb",
+                "Year": "2022-03-11",
+                "Co_Author": "fh",
+                "Edition": 34,
+                "Publisher": "dfg",
+                "faculty": 8
+            },
+            {
+                "id": 20,
+                "Book_title": "vb",
+                "Year": "2022-03-11",
+                "Co_Author": "fh",
+                "Edition": 34,
+                "Publisher": "dfg",
+                "faculty": 8
+            },
+            {
+                "id": 21,
+                "Book_title": "vb",
+                "Year": "2022-03-11",
+                "Co_Author": "",
+                "Edition": 34,
+                "Publisher": "dfg",
+                "faculty": 8
+            },
+            {
+                "id": 23,
+                "Book_title": "vb",
+                "Year": "2022-03-19",
+                "Co_Author": "fh",
+                "Edition": 2,
+                "Publisher": "dfg",
+                "faculty": 8
+            },
+            {
+                "id": 24,
+                "Book_title": "wonder in life of lone wolf",
+                "Year": "2022-03-02",
+                "Co_Author": "12",
+                "Edition": 5,
+                "Publisher": "junkung",
+                "faculty": 8
+            }
+        ],
+        "JournalPublication": [
+            {
+                "id": 5,
+                "Paper_title": "dostdwa paisa leke farar",
+                "Year": "2022-03-26",
+                "Co_Author": "dostwa ka dost",
+                "Volume": 1,
+                "Publisher": "pankaj dilli wala",
+                "Indexing": 2,
+                "faculty": 8
+            },
+            {
+                "id": 6,
+                "Paper_title": "dostdwa paisa leke farar",
+                "Year": "2022-03-03",
+                "Co_Author": "adsfa",
+                "Volume": 1,
+                "Publisher": "pankaj dilli wala",
+                "Indexing": 3,
+                "faculty": 8
+            },
+            {
+                "id": 7,
+                "Paper_title": "dostdwa paisa leke farar",
+                "Year": "2022-03-15",
+                "Co_Author": "fh",
+                "Volume": 5,
+                "Publisher": "pankaj dilli wala",
+                "Indexing": 5,
+                "faculty": 8
+            },
+            {
+                "id": 8,
+                "Paper_title": "dostdwa paisa leke farar",
+                "Year": "2022-03-09",
+                "Co_Author": "fh",
+                "Volume": 34,
+                "Publisher": "pankaj dilli wala",
+                "Indexing": 34,
+                "faculty": 8
+            }
+        ],
+        "ConfrencePublication": [
+            {
+                "id": 4,
+                "Organizer": "safdfd",
+                "Year": "2022-03-09",
+                "Co_Author": "12dsf",
+                "Proceeding": 54,
+                "faculty": 8
+            },
+            {
+                "id": 6,
+                "Organizer": "safdfd",
+                "Year": "2022-03-17",
+                "Co_Author": "fh",
+                "Proceeding": -1,
+                "faculty": 8
+            },
+            {
+                "id": 8,
+                "Organizer": "safdfd",
+                "Year": "2022-03-17",
+                "Co_Author": "12dsf",
+                "Proceeding": 124,
+                "faculty": 8
+            }
+        ],
+        "Name": "garvit",
+        "Department": "adarsh bacha",
+        "Designation": "badiya ldka",
+        "Email": "sahusshj1223@gamil.com"
+    },
+    {
+        "id": 9,
+        "BookPublication": [],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "pankaj",
+        "Department": "sahusdsa",
+        "Designation": "pankajdf",
+        "Email": "pankajashu@gmail.com"
+    },
+    {
+        "id": 10,
+        "BookPublication": [],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "garvit",
+        "Department": "gunda dilli ka",
+        "Designation": "hafa wasuli",
+        "Email": "walal@gamil.com"
+    },
+    {
+        "id": 11,
+        "BookPublication": [],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "jhatu",
+        "Department": "jilllt",
+        "Designation": "jiddi",
+        "Email": "jindabad@gamail.com"
+    },
+    {
+        "id": 12,
+        "BookPublication": [],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "jugalu",
+        "Department": "londa",
+        "Designation": "londiya",
+        "Email": "bobalu@gamil.com"
+    },
+    {
+        "id": 13,
+        "BookPublication": [],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "jula",
+        "Department": "pankaj",
+        "Designation": "hafa wasuli",
+        "Email": "walasdal@gamil.com"
+    },
+    {
+        "id": 14,
+        "BookPublication": [],
+        "JournalPublication": [],
+        "ConfrencePublication": [],
+        "Name": "garvit1",
+        "Department": "gunda dilli ka",
+        "Designation": "hafa wasuli",
+        "Email": "walal@gamil.com"
+    }
+]

@@ -1,0 +1,14 @@
+.search_view{
+    display: flex;
+    justify-content: left;
+}
+
+.flex_col_search{
+    width: 100%;
+}
+.top_search_nav{
+    padding: 40px 50px;
+}
+.search_content_Box{
+    padding: 10px 20px;
+}

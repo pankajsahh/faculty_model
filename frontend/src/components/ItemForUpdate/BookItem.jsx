@@ -16,14 +16,9 @@ const BookItem = ({
 }) => {
 
   const {dataftch} = useContext(Context)///for refresh data we reload with this function
-
-
   const [error, sererror] = useState("");//popup form error
   const [updateBook, setupdateBook] = useState(false);//popup form handeller
-  
   const [bookdata,setbookdata]=useState({ faculty:faculty,  Book_title:"", Year:"", Co_Author:"", Edition:"", Publisher:""});//default datafor popup form
-
-
 
 
   function BookDeleteFunction() { ///to delete the the specific book from publication
@@ -53,6 +48,8 @@ function bookDataChange(e) {
   const toggleShowBookUpdater = () => setupdateBook(!updateBook);
   
   function Bookupdatefunction(){///to update the the specific book from publication
+
+    
 
     const myid = JSON.parse(localStorage.getItem("myid"))
       if (myid !== null) {
@@ -113,7 +110,6 @@ function bookDataChange(e) {
                     <MDBModalContent>
                         <MDBModalHeader>
                             <MDBModalTitle>update  your book Publication <br /> Error:{error}</MDBModalTitle>
-
                             <MDBBtn className='btn-close' color='none' onClick={toggleShowBookUpdater}></MDBBtn>
                         </MDBModalHeader>
                         <MDBModalBody>
