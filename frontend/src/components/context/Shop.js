@@ -10,6 +10,7 @@ const Store = (prop) => {
     const [searchterm,setsearchterm]=useState("")
     const [Faculty, setFaculty] = useState(Myprofile);
     console.log(Faculty,"i am having some data for you ");
+    const apibaseUrl = "http://127.0.0.1:8000/"
     // get id and access_token from localStorage
     //for featching data from local host ( id and token )
     function dataftch() {
@@ -17,7 +18,7 @@ const Store = (prop) => {
         const MyProfileTokenID = JSON.parse(localStorage.getItem("myid"));
         if (MyProfileTokenID !== null) {
             if (MyProfileTokenID.key !== "") {
-                axios.get(`http://127.0.0.1:8000/faculty/${MyProfileTokenID.key}`, {
+                axios.get(`${apibaseUrl}faculty/${MyProfileTokenID.key}`, {
                     headers: {
                         'Authorization': `token ${MyProfileTokenID.token}`
                     }

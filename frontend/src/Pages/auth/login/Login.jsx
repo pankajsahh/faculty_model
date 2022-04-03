@@ -1,8 +1,8 @@
 import axios from 'axios';
+import { MDBInput } from 'mdb-react-ui-kit';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
-
 ////////
 /////sh
 
@@ -26,6 +26,8 @@ const SignIn = () => {
     
     function email_to_id(loginres) { //email from login will find the data of that email in db and store to local storage
         setsucess(true);
+        setusername("");
+         setpassword("");
         let id="";
         axios.get(`http://127.0.0.1:8000/faculty/`, {
             headers: {
@@ -59,7 +61,9 @@ const SignIn = () => {
 
         axios.post(`http://127.0.0.1:8000/account/login/`, data)
             .then(function (response) {
+                
                 email_to_id(response.data);
+
             })
             .catch(function (error) {
                 if (!error?.response) {
@@ -88,10 +92,9 @@ const SignIn = () => {
                     <h2>Sign In</h2>
                     <p>{error}</p>
                     <div className='SignIn__form'>
-                        <label>Username</label>
-                        <input value={username} onChange={handelChange} type='email' placeholder='username'></input>
+                        <MDBInput label="username" value={username} onChange={handelChange} type='text' placeholder='username'/>
                         <label>Password</label>
-                        <input value={password} onChange={handelChange} type='password' placeholder='Password'></input>
+                        <MDBInput label="password" value={password} onChange={handelChange} type='password' placeholder='Password'/>
                         <br />
                         <button onClick={authinspector} className='SignIn__button'>SignIn</button><br />
                         <Link to='/register'><button> create New Account </button></Link>

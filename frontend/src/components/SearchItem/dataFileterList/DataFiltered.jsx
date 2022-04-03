@@ -7,18 +7,21 @@ const DataFiltered =()=>{
     const [fethdata,setfethdata] = useState([])
      function AllFacultyFetch () { 
         const user = JSON.parse(localStorage.getItem("myid")) 
-         axios.get(`http://127.0.0.1:8000/faculty/`, {
-            headers: {
-                'Authorization': `token ${user.token}`
-            }
-        }).then(resp => {
-            const seachresult =  resp.data
-            let filtered = seachresult.filter(a => a.Name.startsWith(searchterm)||a.Department.startsWith(searchterm));
-            console.log(filtered,"hey  i ama filtered");
-            setfethdata(filtered)
-
-        }).catch(err => { console.log(err) })
-
+        if(user!=null){
+            axios.get(`http://127.0.0.1:8000/faculty/`, {
+                headers: {
+                    'Authorization': `token ${user.token}`
+                }
+            }).then(resp => {
+                const seachresult =  resp.data
+                let filtered = seachresult.filter(a => a.Name.startsWith(searchterm)||a.Department.startsWith(searchterm));
+                console.log(filtered,"hey  i ama filtered");
+                setfethdata(filtered)
+    
+            }).catch(err => { console.log(err) })
+    
+        }
+        
 
     }
     const Book_Featch_reference = useRef();
