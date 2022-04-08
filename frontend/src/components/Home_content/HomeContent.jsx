@@ -209,7 +209,7 @@ const Home_content = () => {
                     <h5>{Faculty.Name}</h5>
                     <p> {Faculty.Department}</p>
                     <p> {Faculty.Designation}</p>
-                    <button onClick={toggleShow}>edit</button>
+                    <button onClick={toggleShow}>Edit</button>
                 </div>
             </div>
             <div className="Publlicatons">
@@ -219,10 +219,10 @@ const Home_content = () => {
                     </div>
                     <div className="Curd_buttons">
 
-                        <h2>Books Published</h2>
-                        <p>please add new books to your profile !!!</p>
-                        <button onClick={toggleShowBookAdder}>add</button>
-                       <Link to='/update/Booklist'> <button >update / delete</button> </Link>
+                        <h2>Books</h2>
+                        <p>Please add new books to your profile !!!</p>
+                        <button onClick={toggleShowBookAdder}>Add</button>
+                       <Link to='/update/Booklist'> <button >Update</button> </Link>
                     </div>
                 </div>
                 <div className="publication">
@@ -230,10 +230,10 @@ const Home_content = () => {
                         <img src={"https://images.unsplash.com/photo-1507914997623-5b75b37d9cad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"} alt="..." />
                     </div>
                     <div className="Curd_buttons">
-                        <h2>journals Published</h2>
-                        <p>please add new journals to your profile !!!</p>
-                        <button onClick={toggleShowjournalAdder}>add</button>
-                        <Link to='/update/journallist'> <button >update / delete</button></Link>
+                        <h2>Journals</h2>
+                        <p>Please add new journals to your profile !!!</p>
+                        <button onClick={toggleShowjournalAdder}>Add</button>
+                        <Link to='/update/journallist'> <button >Update</button></Link>
                     </div>
                 </div>
                 <div className="publication">
@@ -241,10 +241,10 @@ const Home_content = () => {
                         <img src={"https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_960_720.jpg"} alt="..." />
                     </div>
                     <div className="Curd_buttons">
-                        <h2>confrences Published</h2>
-                        <p>please add new confrences to your profile !!!</p>
-                        <button onClick={toggleShowconfrenceAdder}>add</button>
-                        <Link to='/update/confrencelist'> <button >update / delete</button></Link>   
+                        <h2>Conferences</h2>
+                        <p>Please add new conferences to your profile !!!</p>
+                        <button onClick={toggleShowconfrenceAdder}>Add</button>
+                        <Link to='/update/confrencelist'> <button >Update</button></Link>   
                     </div>
                 </div>
             </div>

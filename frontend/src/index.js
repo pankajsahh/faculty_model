@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-
 import Store from "./components/context/Shop.js"
 ReactDOM.render(
   <React.StrictMode>

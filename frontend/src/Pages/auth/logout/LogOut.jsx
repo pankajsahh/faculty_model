@@ -32,8 +32,8 @@ const LogoutButton =()=>{
         <Link to="/login" onClick={LogOutReqTOServer}>
           <MDBDropdownItem className="w-2" >
           <MDBIcon fas icon="sign-out-alt" />
-          <button className="LogoutButton" >logout</button>
-          <button className="LogoutButton" >Login</button>
+          <button className="LogoutButton" >LogOut</button>
+          <button className="LogoutButton" >LogIn</button>
           </MDBDropdownItem>
           </Link>
         </MDBDropdownMenu>

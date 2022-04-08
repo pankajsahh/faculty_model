@@ -4,24 +4,33 @@ import FacultySearchItem from "../SearchItem";
 import Context from '../../../components/context/Context.js'
 const DataFiltered =()=>{
     const {searchterm} =useContext(Context)
-    const [fethdata,setfethdata] = useState([])
+    const [fethdata,setfethdata] = useState([
+        {
+        "BookPublication": [],
+        "ConfrencePublication": [],
+        "Department": "",
+        "Designation": "",
+        "Email": "",
+        "JournalPublication": [],
+        "Name": "pankaj",
+        "id": 0}])
+    console.log(fethdata,"this is a featched data")
      function AllFacultyFetch () { 
+
         const user = JSON.parse(localStorage.getItem("myid")) 
-        if(user!=null){
-            axios.get(`http://127.0.0.1:8000/faculty/`, {
-                headers: {
-                    'Authorization': `token ${user.token}`
-                }
-            }).then(resp => {
-                const seachresult =  resp.data
-                let filtered = seachresult.filter(a => a.Name.startsWith(searchterm)||a.Department.startsWith(searchterm));
-                console.log(filtered,"hey  i ama filtered");
-                setfethdata(filtered)
-    
-            }).catch(err => { console.log(err) })
-    
-        }
-        
+        if(user!==null){
+         axios.get(`http://127.0.0.1:8000/faculty/`, {
+            headers: {
+                'Authorization': `token ${user.token}`
+            }
+        }).then(resp => {
+            const seachresult =  resp.data
+            let filtered = seachresult.filter(a => a.Name.startsWith(searchterm)||a.Department.startsWith(searchterm));
+            console.log(filtered,"hey  i ama filtered");
+            setfethdata(filtered)
+
+        }).catch(err => { console.log(err) })
+    }
 
     }
     const Book_Featch_reference = useRef();

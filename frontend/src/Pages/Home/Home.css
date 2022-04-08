@@ -3,7 +3,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    
+    /* background-color: #071426; */
+    /* color: white; */
 }
 
 .flex_col{
@@ -18,14 +19,17 @@
     /* border: 1px solid red; */
     border-top-left-radius: 15px;
     background: #dbdbdb2a ;
+    /* background-color: #071426; */
 }
 .top_nav{ /* width need media query */
     width: 80vw;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
+    /* border-bottom:2px solid #BC4123 ; */
 }
 .left_nav{
     height: 100vh;
+    
 }
 /* color decided #F2F2F2 60 #DBDBDB 30 #20BDFF 10 */
