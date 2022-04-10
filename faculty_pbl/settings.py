@@ -32,8 +32,10 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
+
     'rest_framework',
     'django_rest_passwordreset',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

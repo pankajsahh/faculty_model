@@ -1,20 +1,11 @@
 import axios from "axios";
-import { useContext, useEffect,useState, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import FacultySearchItem from "../SearchItem";
 import Context from '../../../components/context/Context.js'
 const DataFiltered =()=>{
-    const {searchterm} =useContext(Context)
-    const [fethdata,setfethdata] = useState([
-        {
-        "BookPublication": [],
-        "ConfrencePublication": [],
-        "Department": "",
-        "Designation": "",
-        "Email": "",
-        "JournalPublication": [],
-        "Name": "pankaj",
-        "id": 0}])
-    console.log(fethdata,"this is a featched data")
+    const {fethdata,setfethdata,searchterm} =useContext(Context)
+   
+    
      function AllFacultyFetch () { 
 
         const user = JSON.parse(localStorage.getItem("myid")) 
@@ -26,7 +17,7 @@ const DataFiltered =()=>{
         }).then(resp => {
             const seachresult =  resp.data
             let filtered = seachresult.filter(a => a.Name.startsWith(searchterm)||a.Department.startsWith(searchterm));
-            console.log(filtered,"hey  i ama filtered");
+            // console.log(filtered,"hey  i ama filtered");
             setfethdata(filtered)
 
         }).catch(err => { console.log(err) })
@@ -36,7 +27,7 @@ const DataFiltered =()=>{
     const Book_Featch_reference = useRef();
     Book_Featch_reference.current = AllFacultyFetch;
 
-    
+    console.log(fethdata,"from datdafilter file")
     useEffect(()=>{
       console.log("called all featch daata")
         Book_Featch_reference.current();
@@ -44,7 +35,8 @@ const DataFiltered =()=>{
     },[searchterm])
     return(
         <>
-            {fethdata.map(({id,...otherprops})=>(
+            {
+            fethdata.map(({id,...otherprops})=>(
                 <FacultySearchItem key={id} {...otherprops} />
             ))}
         </>

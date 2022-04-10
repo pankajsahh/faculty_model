@@ -10,6 +10,7 @@ import BookList from './components/ItemList/BookItemList.jsx'
 import SearchPage from './Pages/Search/SearchPage.jsx';
 import Feedback from './Pages/Feedback/Feedback';
 import Contact from './Pages/Contact/Contact';
+import DataFiltered from './components/SearchItem/dataFileterList/DataFiltered.jsx'
 function App() {
   return (
     <BrowserRouter>
@@ -22,7 +23,9 @@ function App() {
         <Route path='/update/confrencelist' element={<ConfrenceItemList/>}/>
         <Route path='/update/journallist' element={<JournalItemList/>}/>
       </Route>
-      <Route path='/search' element={<SearchPage/>}/>
+      <Route path='/searchFaculty' element={<SearchPage/>}>
+        <Route path='/searchFaculty' element={<DataFiltered/>}/>
+      </Route>
       <Route path='/Feedback' element={<Feedback/>}/>
        <Route path='/contactUs'element={<Contact/>} />  
         </Routes>

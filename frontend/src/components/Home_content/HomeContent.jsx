@@ -350,7 +350,7 @@ const Home_content = () => {
                                 </div>
                                 <div className='mb-3'>
                                     <MDBInput value={NewBookData.Year}
-                                        onChange={popupAddbookDataChange} label="year of Publication" placeholder='.' type='Date' name="Year" />
+                                        onChange={popupAddbookDataChange} label="year of Publication"  type='Date' name="Year" />
                                 </div>
                                 <div className='mb-3'>
                                     <MDBInput value={NewBookData.Edition}

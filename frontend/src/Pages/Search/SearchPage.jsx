@@ -1,7 +1,8 @@
 
+import { Outlet } from 'react-router-dom';
 import LeftNav from '../../components/LeftNav/LeftNav';
 import SearchEngine from '../../components/SearchEngine/SearchEngine';
-import DataFiltered from '../../components/SearchItem/dataFileterList/DataFiltered';
+
 import './SearchPage.css';
 
 const SearchPage = () => {
@@ -15,8 +16,9 @@ const SearchPage = () => {
                 <div className="top_search_nav">
                     <SearchEngine />
                 </div>
+                
                 <div className="search_content_Box">
-                <DataFiltered/>
+                <Outlet/>
                 </div>
             </div>
 

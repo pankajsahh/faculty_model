@@ -105,7 +105,7 @@ const SignIn = () => {
                 <div className="SignIn_header">
                   <h2>Sign In </h2>
                   <small>Stay updated on your professional world .</small>
-                  <p className="text-danger">Error : {error}</p>
+                  <p className="text-danger">{error}</p>
                   <hr />
                 </div>
                 <div className="SignIn_details">

@@ -10,6 +10,16 @@ const Store = (prop) => {
     const [searchterm,setsearchterm]=useState("")
     const [Faculty, setFaculty] = useState(Myprofile);
     console.log(Faculty,"i am having some data for you ");
+    const [fethdata,setfethdata] = useState([
+        {
+        "BookPublication": [],
+        "ConfrencePublication": [],
+        "Department": "",
+        "Designation": "",
+        "Email": "",
+        "JournalPublication": [],
+        "Name": "pankaj",
+        "id": 0}])
     // get id and access_token from localStorage
     //for featching data from local host ( id and token )
     function dataftch() {
@@ -35,7 +45,7 @@ const Store = (prop) => {
 
 
     return (
-        <Context.Provider value={{ Faculty ,setFaculty,dataftch,searchterm,setsearchterm}}>
+        <Context.Provider value={{fethdata,setfethdata, Faculty ,setFaculty,dataftch,searchterm,setsearchterm}}>
             {prop.children}
         </Context.Provider>
     )

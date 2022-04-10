@@ -12,7 +12,7 @@ const Left_nav = () => {
             <MDBIcon fas icon="user-alt" /> My profile
           </li>
         </Link>
-        <Link to="/search">
+        <Link to="/searchFaculty">
           <li className="search">
             <MDBIcon fab icon="searchengin" /> Search
           </li>
