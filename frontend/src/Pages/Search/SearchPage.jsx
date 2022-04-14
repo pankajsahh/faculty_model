@@ -1,8 +1,7 @@
 
 import { Outlet } from 'react-router-dom';
 import LeftNav from '../../components/LeftNav/LeftNav';
-import SearchEngine from '../../components/SearchEngine/SearchEngine';
-
+import   SearchNavBar  from '../../components/Search_NavBar/Search_nav.jsx'
 import './SearchPage.css';
 
 const SearchPage = () => {
@@ -14,7 +13,7 @@ const SearchPage = () => {
             </div>
             <div className='flex_col_search'>
                 <div className="top_search_nav">
-                    <SearchEngine />
+                <SearchNavBar/>
                 </div>
                 
                 <div className="search_content_Box">

@@ -1,13 +1,12 @@
 import React from 'react'
-
+import './data.css'
 import * as FileSaver from 'file-saver';
 
 import * as XLSX from 'xlsx';
-import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 
-export const ExportCSV = ({csvData, fileName}) => {
+export const ExportCSV = ({csvData, fileName,children}) => {
 
 
 
@@ -35,7 +34,7 @@ export const ExportCSV = ({csvData, fileName}) => {
 
     return (
 
-        <MDBBtn className='bg-success w-30 '  onClick={(e) => exportToCSV(csvData,fileName)}>Export filtered faculty data </MDBBtn>
+        <div className='navi'  onClick={(e) => exportToCSV(csvData,fileName)}>{children}</div>
 
     )
 

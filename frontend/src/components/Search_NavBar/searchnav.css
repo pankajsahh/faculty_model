@@ -1,0 +1,9 @@
+.dnlodnavigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 0;
+    background: #dbdbdb41;
+    border-radius: 5px;
+}

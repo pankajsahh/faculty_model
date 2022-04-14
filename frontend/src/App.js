@@ -23,8 +23,8 @@ function App() {
         <Route path='/update/confrencelist' element={<ConfrenceItemList/>}/>
         <Route path='/update/journallist' element={<JournalItemList/>}/>
       </Route>
-      <Route path='/searchFaculty' element={<SearchPage/>}>
-        <Route path='/searchFaculty' element={<DataFiltered/>}/>
+      <Route path='/search/faculty' element={<SearchPage/>}>
+        <Route path='/search/faculty' element={<DataFiltered/>}/>
       </Route>
       <Route path='/Feedback' element={<Feedback/>}/>
        <Route path='/contactUs'element={<Contact/>} />  
