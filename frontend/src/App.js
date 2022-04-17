@@ -11,6 +11,8 @@ import SearchPage from "./Pages/Search/SearchPage.jsx";
 import Feedback from "./Pages/Feedback/Feedback";
 import Contact from "./Pages/Contact/Contact";
 import DataFiltered from "./components/SearchItem/dataFileterList/DataFiltered.jsx";
+
+
 function App() {
   return (
     <BrowserRouter>

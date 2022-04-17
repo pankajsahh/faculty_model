@@ -142,6 +142,14 @@ const Register = () => {
                   name="username"
                 />
                 
+                <MDBInput label="Department"
+                  type="text"
+                  className="designation"
+                  value={data.department}
+                  onChange={handelRegisterChanges}
+                  name="department"
+                />
+
                 <MDBInput label="designation"
                   className="designation"
                   value={data.designation}
@@ -158,13 +166,7 @@ const Register = () => {
                   name="email"
                 />
              
-                <MDBInput label="Department"
-                  type="text"
-                  className="designation"
-                  value={data.department}
-                  onChange={handelRegisterChanges}
-                  name="department"
-                />
+                
              
                 <MDBInput label="Password"
                   type="password"
