@@ -16,9 +16,13 @@ import {
   MDBBtn
 } from "mdb-react-ui-kit";
 const Feedback = () => {
+<<<<<<< HEAD
 
   const [flag,setFlag]=useState(false);
 
+=======
+  const [flag,setFlag]=useState(false);
+>>>>>>> bf96d1b2bc28c56a1e5db72b665efc9aaaa69cca
   let sendFeedback = (e)=>{
       e.preventDefault();
       emailjs.sendForm('service_d64zsci','template_qnnvkvp',e.target,"NQgpo2o9vpYJX41zY"
@@ -29,7 +33,11 @@ const Feedback = () => {
     
   }
   
+<<<<<<< HEAD
    if(flag===true){
+=======
+   if(flag==true){
+>>>>>>> bf96d1b2bc28c56a1e5db72b665efc9aaaa69cca
      return (
       <div className="biggi">
       <MDBModalDialog  centered >
