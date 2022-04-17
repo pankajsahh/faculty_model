@@ -4,7 +4,7 @@ import FacultySearchItem from "../SearchItem";
 import Context from '../../../components/context/Context.js'
 import SearchEngine from "../../SearchEngine/SearchEngine";
 const DataFiltered =()=>{
-    const {fethdata,setfethdata,searchterm,fetchall} =useContext(Context)
+    const {fethdata,setfethdata,searchterm} =useContext(Context)
    
     
      function AllFacultyFetch () { 
@@ -15,10 +15,10 @@ const DataFiltered =()=>{
                 'Authorization': `token ${user.token}`
             }
         }).then(resp => {
-            const seachresult =  resp.data
+            const seachresult =  resp.data  
+            console.log(resp.data,"dataaaaaaaaa")
             let filtered = seachresult.filter(a => a.Name.startsWith(searchterm)||a.Department.startsWith(searchterm));
             setfethdata(filtered)
-
         }).catch(err => { console.log(err) })
     }
 
@@ -30,7 +30,7 @@ const DataFiltered =()=>{
         Book_Featch_reference.current();
     },[searchterm])
     useEffect(()=>{
-        fetchall();
+    
     },[])
     return(
         <>

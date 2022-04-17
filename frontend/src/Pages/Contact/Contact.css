@@ -1,5 +1,6 @@
 
 .Feedback_container{
+    padding: 15px;
     display: flex;
     /* width: fit-content; */
     justify-content: center;
@@ -15,15 +16,7 @@
     transform:translate(-50%,-50%);
     /* box-sizing: border-box; */
 }
-.Feedback{
-    /* box-shadow: 1.5px 0.5px 1px 3px rgb(209, 205, 205) inset; */
-    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
-    /* transform: translate(40%,30%); */
-    padding: 10px 30px;
-    /* border: 0.05px solid  black; */
-    border-radius: 10px;
 
-}
 .Feedback_header{
     text-align: center;
     letter-spacing: normal;
@@ -43,3 +36,6 @@
     color: black;
 }
 
+.contact_page{
+display: flex;
+}

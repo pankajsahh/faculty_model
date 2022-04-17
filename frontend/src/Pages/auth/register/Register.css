@@ -54,25 +54,7 @@
     width: 100%;
 }
 
-#button{
-    width: 70%;
-    background-color: white;
-    border-radius: 15px;
-    color: black;
-    padding:7px ;
-    margin: 5px 0;
-    border: 0.2px solid black;
-    /* background-color: #071426;
-    color: white;
-    border: 0.1px solid #BC4123; */
-}
 
-#button:hover{
-    transition: 0.6s;
-    background-color: #20BDFF;
-    color: white;
-    opacity: 0.5;
-}
 .sucess{
     position: absolute;
     left:50%;

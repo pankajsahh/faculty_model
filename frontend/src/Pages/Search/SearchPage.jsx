@@ -1,11 +1,13 @@
 
-import { Outlet } from 'react-router-dom';
+import { Navigate, Outlet } from 'react-router-dom';
 import LeftNav from '../../components/LeftNav/LeftNav';
 import   SearchNavBar  from '../../components/Search_NavBar/Search_nav.jsx'
 import './SearchPage.css';
 
 const SearchPage = () => {
-
+    if(localStorage.getItem("myid")===null){
+        return <Navigate to="/login" />;
+    }
     return (
         <div className="search_view">
             <div className="left_nav">

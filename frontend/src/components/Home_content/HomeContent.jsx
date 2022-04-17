@@ -309,8 +309,7 @@ const Home_content = () => {
                 <MDBModalDialog centered>
                     <MDBModalContent>
                         <MDBModalHeader>
-                            <MDBModalTitle>add New Book to your Publication <br /> Error:{error}</MDBModalTitle>
-
+                            <MDBModalTitle>Add New Book to your Publication <br /> Error:{error}</MDBModalTitle>
                             <MDBBtn className='btn-close' color='none' onClick={toggleShowBookAdder}></MDBBtn>
                         </MDBModalHeader>
                         <MDBModalBody>
@@ -373,7 +372,7 @@ const Home_content = () => {
                 <MDBModalDialog centered>
                     <MDBModalContent>
                         <MDBModalHeader>
-                            <MDBModalTitle>add New confrence to your Publication <br /> Error:{error}</MDBModalTitle>
+                            <MDBModalTitle>Add New confrence to your Publication <br /> Error:{error}</MDBModalTitle>
                             <MDBBtn className='btn-close' color='none' onClick={toggleShowconfrenceAdder}></MDBBtn>
                         </MDBModalHeader>
                         <MDBModalBody>
@@ -425,7 +424,7 @@ const Home_content = () => {
                 <MDBModalDialog centered>
                     <MDBModalContent>
                         <MDBModalHeader>
-                            <MDBModalTitle>add New journal to your Publication <br /> Error:{error}</MDBModalTitle>
+                            <MDBModalTitle>Add New journal to your Publication <br /> Error:{error}</MDBModalTitle>
                             <MDBBtn className='btn-close' color='none' onClick={toggleShowjournalAdder}></MDBBtn>
                         </MDBModalHeader>
                         <MDBModalBody>
