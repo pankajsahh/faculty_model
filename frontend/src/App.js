@@ -11,6 +11,9 @@ import SearchPage from "./Pages/Search/SearchPage.jsx";
 import Feedback from "./Pages/Feedback/Feedback";
 import Contact from "./Pages/Contact/Contact";
 import DataFiltered from "./components/SearchItem/dataFileterList/DataFiltered.jsx";
+import BookFilter from "./components/SearchItem/dataFileterList/BookFilter";
+import JournalFilter from "./components/SearchItem/dataFileterList/journalfilter";
+import Confrencefilter from "./components/SearchItem/dataFileterList/confrencedatafilter";
 
 
 function App() {
@@ -18,6 +21,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
+
         <Route path="/login" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
 
@@ -27,8 +31,11 @@ function App() {
           <Route path="/update/journallist" element={<JournalItemList />} />
         </Route>
 
-        <Route path="/search/faculty" element={<SearchPage />}>
-          <Route path="/search/faculty" element={<DataFiltered />} />
+        <Route path="/search" element={<SearchPage />}>
+          <Route path="/search/faculty" element={<DataFiltered />}/>
+          <Route path="/search/books" element={<BookFilter/>}/>
+          <Route path="/search/journals" element={<JournalFilter/>}/>
+          <Route path="/search/confrences" element={<Confrencefilter/>}/>
         </Route>
 
         <Route path="/Feedback" element={<Feedback />} />

@@ -1,9 +1,10 @@
 import { MDBIcon, MDBInput, MDBInputGroup } from "mdb-react-ui-kit";
 import { useContext } from "react";
 import Context from "../context/Context";
+import { ExportCSV } from "../data/faculty-data";
 import './searchengine.css'
 const SearchEngine = () => {
-  const {setsearchterm, searchterm } = useContext(Context);
+  const {setsearchterm,fethdata, searchterm } = useContext(Context);
 
   function handelchangesearch(e) {
     setsearchterm(e.target.value);
@@ -24,6 +25,10 @@ const SearchEngine = () => {
             type="text"
             style={{width: 1000}}
           />
+          
+          <ExportCSV csvData={fethdata} fileName={`facultydata`}>
+        <MDBIcon fas icon="cloud-download-alt" />  Download faculty data{" "}
+        </ExportCSV>
         </MDBInputGroup>
       </div>
     </>
