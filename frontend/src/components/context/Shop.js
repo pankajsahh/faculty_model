@@ -18,11 +18,32 @@ const Store = (prop) => {
     Organizer: "",
     Proceeding: "",
     Year: "",
-    
   });
-  
+
   const [afterfilterconfrence, setafterfilterconfrence] = useState([
     { Co_Author: "", Organizer: "", Proceeding: "", Year: "" },
+  ]);
+
+  const [filterjournal, setfilterjournal] = useState({
+    Co_Author: "",
+    Indexing: "",
+    Paper_title: "",
+    Publisher: "",
+    Volume: "",
+    Year: "",
+    faculty: "",
+  });
+
+  const [afterfilterjournal, setafterfilterjournal] = useState([
+    {
+      Co_Author: "",
+      Indexing: "",
+      Paper_title: "",
+      Publisher: "",
+      Volume: "",
+      Year: "",
+      faculty: "",
+    },
   ]);
 
   const Myprofile = {
@@ -109,6 +130,10 @@ const Store = (prop) => {
   return (
     <Context.Provider
       value={{
+        filterjournal,
+        setfilterjournal,
+        afterfilterjournal,
+        setafterfilterjournal,
         afterfilterconfrence,
         setafterfilterconfrence,
         filterconfrence,

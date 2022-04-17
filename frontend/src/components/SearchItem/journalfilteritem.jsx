@@ -11,7 +11,8 @@ import './SearchItem.css'
 // id: ""
 
 const JournalSearchItem=(prop)=>{
-    return(
+ 
+    return(<>
         <div className="FacultyItemView">
         <div className="Facultyimage">
           <img
@@ -43,6 +44,7 @@ const JournalSearchItem=(prop)=>{
           </MDBContainer>
         </div>
       </div>
+      </>
     )
 }
 
