@@ -12,7 +12,7 @@ const TopNav = () => {
         <>
             <div className='nav_detail'>
                 <h5>Hey {Faculty.Name} welcome to your dashboard </h5>
-                <h6>lets add some publications</h6>
+                <h6>Let's add some publications</h6>
             </div>
             <div className="signinLogo">
                 <MDBIcon far icon="circle" />
