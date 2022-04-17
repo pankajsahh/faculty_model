@@ -18,17 +18,22 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="/update" element={<UpdatePage />}>
           <Route path="/update/Booklist" element={<BookList />} />
           <Route path="/update/confrencelist" element={<ConfrenceItemList />} />
           <Route path="/update/journallist" element={<JournalItemList />} />
         </Route>
+
         <Route path="/search/faculty" element={<SearchPage />}>
           <Route path="/search/faculty" element={<DataFiltered />} />
         </Route>
+
         <Route path="/Feedback" element={<Feedback />} />
         <Route path="/contactUs" element={<Contact />} />
+
       </Routes>
+
     </BrowserRouter>
   );
 }
