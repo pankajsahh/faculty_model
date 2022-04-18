@@ -1,4 +1,4 @@
-import { MDBIcon, MDBInput } from "mdb-react-ui-kit";
+import {  MDBInput } from "mdb-react-ui-kit";
 import { useContext } from "react";
 import Context from "../../context/Context";
 import { ExportCSV } from "../../data/faculty-data";
@@ -38,7 +38,7 @@ const ConfrenceOption = () => {
         name="Proceeding"
         label="Proceeding " />
         <ExportCSV csvData={afterfilterconfrence} fileName={`confrencesdata`}>
-        <MDBIcon fas icon="cloud-download-alt" />  Download confrence data {" "}
+       Download 
         </ExportCSV>
       </div>
     </>

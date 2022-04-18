@@ -5,10 +5,11 @@ import BookSearchItem from "../bookfilteredItem";
 import BookOption from "../FilterOptions/bookOptions";
 
 const BookFilter = () => {
-   const {filterBook,afterfilterbooks,setafterfilterbooks}= useContext(Context)
+   const {filterBook,afterfilterbooks,setafterfilterbooks,setsearchnavcolor}= useContext(Context)
 
 
     function AllBookFetch () { 
+        setsearchnavcolor("book");
         const user = JSON.parse(localStorage.getItem("myid")) 
         if(user!==null){
          axios.get(`http://127.0.0.1:8000/books/`, {

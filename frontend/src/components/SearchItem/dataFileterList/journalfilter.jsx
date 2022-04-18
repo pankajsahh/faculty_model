@@ -6,9 +6,10 @@ import JournalSearchItem from "../journalfilteritem";
 
 const JournalFilter = () => {
    const {filterjournal,
-    afterfilterjournal, setafterfilterjournal,}= useContext(Context)
+    afterfilterjournal, setafterfilterjournal,setsearchnavcolor}= useContext(Context)
 
     function AllconfrenceFetch () { 
+        setsearchnavcolor("journal");
         const user = JSON.parse(localStorage.getItem("myid")) 
         if(user!==null){
          axios.get(`http://127.0.0.1:8000/journals/`, {

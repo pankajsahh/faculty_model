@@ -4,6 +4,8 @@
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     margin: 5px 0;
+    border-radius: 8px;
+   
  }
  .navi:hover{
      cursor: pointer;
@@ -12,3 +14,8 @@
      color: white;
      background: #20bcff8f;
  }
+ .borderI{
+    border: 1.5px solid #20bcff !important;
+    margin-left: 8px !important;
+    border-radius: 10px !important;
+}

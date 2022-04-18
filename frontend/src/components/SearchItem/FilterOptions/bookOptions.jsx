@@ -1,4 +1,4 @@
-import { MDBIcon, MDBInput } from "mdb-react-ui-kit";
+import {  MDBInput } from "mdb-react-ui-kit";
 import { useContext } from "react";
 import Context from "../../context/Context";
 import { ExportCSV } from "../../data/faculty-data";
@@ -39,7 +39,7 @@ const BookOption = () => {
         name="Publisher"
         label="Publisher" />
         <ExportCSV csvData={afterfilterbooks} fileName={`booksdata`}>
-        <MDBIcon fas icon="cloud-download-alt" />  Download books data {" "}
+         Download{" "}
         </ExportCSV>
       </div>
     </>

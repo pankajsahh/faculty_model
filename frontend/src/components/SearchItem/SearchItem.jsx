@@ -12,7 +12,7 @@ const FacultySearchItem=(prop)=>{
           />
         </div>
         <div className="FacultyDetails">
-          <h3>Faculty : {prop.Name}</h3>
+          <h3 className="ms-2 ">{prop.id} : {prop.Name}</h3>
           <MDBContainer>
             <MDBRow>
               <MDBCol size="6" sm="3" className="w-50 col-example">

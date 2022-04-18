@@ -3,6 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 
 const Store = (prop) => {
+  const [searchnavcolor, setsearchnavcolor] = useState("");
+
   const [filterBook, setfilterBook] = useState({
     Book_title: "",
     Year: "",
@@ -130,6 +132,8 @@ const Store = (prop) => {
   return (
     <Context.Provider
       value={{
+        searchnavcolor,
+        setsearchnavcolor,
         filterjournal,
         setfilterjournal,
         afterfilterjournal,

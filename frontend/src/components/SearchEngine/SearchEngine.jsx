@@ -23,11 +23,11 @@ const SearchEngine = () => {
             value={searchterm}
             onChange={handelchangesearch}
             type="text"
-            style={{width: 1000}}
+            style={{width: 700}}
           />
           
           <ExportCSV csvData={fethdata} fileName={`facultydata`}>
-        <MDBIcon fas icon="cloud-download-alt" />  Download faculty data{" "}
+        Download {" "}
         </ExportCSV>
         </MDBInputGroup>
       </div>

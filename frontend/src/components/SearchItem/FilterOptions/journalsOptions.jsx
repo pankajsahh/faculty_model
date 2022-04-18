@@ -1,4 +1,4 @@
-import { MDBIcon, MDBInput } from "mdb-react-ui-kit";
+import {  MDBInput } from "mdb-react-ui-kit";
 import { useContext } from "react";
 import Context from "../../context/Context";
 import { ExportCSV } from "../../data/faculty-data";
@@ -44,7 +44,7 @@ const JournalOption = () => {
           label="Indexing "
         />
         <ExportCSV csvData={afterfilterjournal} fileName={`journalsdata`}>
-          <MDBIcon fas icon="cloud-download-alt" /> Download journal data
+         Download 
         </ExportCSV>
       </div>
     </>

@@ -4,10 +4,11 @@ import FacultySearchItem from "../SearchItem";
 import Context from '../../../components/context/Context.js'
 import SearchEngine from "../../SearchEngine/SearchEngine";
 const DataFiltered =()=>{
-    const {fethdata,setfethdata,searchterm} =useContext(Context)
+    const {fethdata,setfethdata,searchterm,setsearchnavcolor} =useContext(Context)
    
     
      function AllFacultyFetch () { 
+        setsearchnavcolor("faculty");
         const user = JSON.parse(localStorage.getItem("myid")) 
         if(user!==null){
          axios.get(`http://127.0.0.1:8000/faculty/`, {
@@ -40,7 +41,7 @@ const DataFiltered =()=>{
                 
             {
             fethdata.map(({id,...otherprops})=>(
-                <FacultySearchItem key={id} {...otherprops} />
+                <FacultySearchItem id={id} key={id} {...otherprops} />
             ))}
         </>
     )

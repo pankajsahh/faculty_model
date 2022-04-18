@@ -1,8 +1,9 @@
 import React from 'react'
 import './data.css'
 import * as FileSaver from 'file-saver';
-
+import './data.css'
 import * as XLSX from 'xlsx';
+import { MDBIcon } from 'mdb-react-ui-kit';
 
 
 
@@ -34,7 +35,7 @@ export const ExportCSV = ({csvData, fileName,children}) => {
 
     return (
 
-        <div className='navi'  onClick={(e) => exportToCSV(csvData,fileName)}>{children}</div>
+        <div className='navi borderI'  onClick={(e) => exportToCSV(csvData,fileName)}><MDBIcon fas icon="cloud-download-alt" /> {children}</div>
 
     )
 

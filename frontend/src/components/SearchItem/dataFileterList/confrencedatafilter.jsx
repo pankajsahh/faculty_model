@@ -5,10 +5,11 @@ import ConfrenceSearchItem from "../confrencefilteritem";
 import ConfrenceOption from "../FilterOptions/confrenceOptions";
 
 const Confrencefilter = () => {
-   const {filterconfrence,afterfilterconfrence,setafterfilterconfrence}= useContext(Context)
+   const {filterconfrence,afterfilterconfrence,setafterfilterconfrence,setsearchnavcolor}= useContext(Context)
 
 
     function AllconfrenceFetch () { 
+        setsearchnavcolor("confrence");
         const user = JSON.parse(localStorage.getItem("myid")) 
         if(user!==null){
          axios.get(`http://127.0.0.1:8000/confrences/`, {
