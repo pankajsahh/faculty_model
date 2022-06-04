@@ -18,7 +18,7 @@ const BookItem = ({
   const {dataftch} = useContext(Context)///for refresh data we reload with this function
   const [error, sererror] = useState("");//popup form error
   const [updateBook, setupdateBook] = useState(false);//popup form handeller
-  const [bookdata,setbookdata]=useState({ faculty:faculty,  Book_title:"", Year:"", Co_Author:"", Edition:"", Publisher:""});//default datafor popup form
+  const [bookdata,setbookdata]=useState({ faculty:faculty,  Book_title:Book_title, Year:Year, Co_Author:Co_Author, Edition:Edition, Publisher:Publisher});//default datafor popup form
 
 
   function BookDeleteFunction() { ///to delete the the specific book from publication

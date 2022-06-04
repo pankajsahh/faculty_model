@@ -6,7 +6,7 @@ import { MDBBtn, MDBCol, MDBContainer, MDBInput, MDBModal, MDBModalBody, MDBModa
 
 
 const ConfrenceItem = ({id,Organizer,Year,Co_Author,Proceeding,faculty}) =>{
-  const [confrencedata,setconfrencedata]=useState({Organizer:'',Year:'',Co_Author:'',Proceeding:'',faculty:faculty})
+  const [confrencedata,setconfrencedata]=useState({Organizer:Organizer,Year:Year,Co_Author:Co_Author,Proceeding:Proceeding,faculty:faculty})
   const {dataftch} = useContext(Context)
 
   const [error, sererror] = useState("");//popup form error

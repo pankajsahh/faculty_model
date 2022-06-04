@@ -20,12 +20,12 @@ const JournalItem = ({
   const [updatejournal, setupdatejournal] = useState(false);//popup form handeller
   
   const [journaldata,setjournaldata]=useState({ faculty:faculty, id,
-    Paper_title:"",
-    Year:"",
-    Co_Author:"",
-    Volume:"",
-    Publisher:"",
-    Indexing:""});//default datafor popup form
+    Paper_title:Paper_title,
+    Year:Year,
+    Co_Author:Co_Author,
+    Volume:Volume,
+    Publisher:Publisher,
+    Indexing:Indexing});//default datafor popup form
 
 
 
